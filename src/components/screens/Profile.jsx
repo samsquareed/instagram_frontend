@@ -12,7 +12,7 @@ const Profile = () =>{
 
     useEffect(()=>{
         const authAxios = Axios.create({
-            baseURL : 'http://localhost:3001',
+            baseURL : 'https://ingrammer.herokuapp.com/',
             headers : {
                 Authorization : `Bearer ${localStorage.getItem("jwt")}`
             }

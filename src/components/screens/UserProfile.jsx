@@ -16,7 +16,7 @@ const UserProfile = () =>{
 
     useEffect( async ()=>{
         const authAxios = await Axios.create({
-            baseURL : 'http://localhost:3001',
+            baseURL : 'https://ingrammer.herokuapp.com/',
             headers : {
                 Authorization : `Bearer ${localStorage.getItem("jwt")}`
             }
@@ -43,7 +43,7 @@ const UserProfile = () =>{
     const handleFollow = async() =>{
         
         const authAxios = await Axios.create({
-            baseURL : 'http://localhost:3001',
+            baseURL : 'https://ingrammer.herokuapp.com/',
             headers : {
                 Authorization : `Bearer ${localStorage.getItem("jwt")}`
             }
@@ -70,7 +70,7 @@ const UserProfile = () =>{
 
     const handleUnFollow = async() =>{
         const authAxios = await Axios.create({
-            baseURL : 'http://localhost:3001',
+            baseURL : 'https://ingrammer.herokuapp.com/',
             headers : {
                 Authorization : `Bearer ${localStorage.getItem("jwt")}`
             }

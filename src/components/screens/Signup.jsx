@@ -38,7 +38,7 @@ const Signup = () =>{
             return
         }
         // console.log(name, email, password);
-        Axios.post('http://localhost:3001/signup',{name,email,password,pic:url})
+        Axios.post('https://ingrammer.herokuapp.com/signup',{name,email,password,pic:url})
         .then(response=> {
             // console.log(response)
             if(response.data.message){
