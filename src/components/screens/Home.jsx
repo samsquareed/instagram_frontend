@@ -33,7 +33,7 @@ const Home = () =>{
         //this id corresponds to Id of logged in user
         // console.log(id);
         const authAxios = Axios.create({
-            baseURL : 'http://localhost:3001',
+            baseURL : 'https://ingrammer.herokuapp.com/',
             headers :{
                 Authorization : `Bearer ${localStorage.getItem("jwt")}`
             }
@@ -58,7 +58,7 @@ const Home = () =>{
          //this id corresponds to Id of logged in user
         //  console.log(id);
         const authAxios = Axios.create({
-            baseURL : 'http://localhost:3001',
+            baseURL : 'https://ingrammer.herokuapp.com/',
             headers :{
                 Authorization : `Bearer ${localStorage.getItem("jwt")}`
             }
@@ -83,7 +83,7 @@ const Home = () =>{
         // console.log(comment);
         // console.log(text, id);
         const authAxios = Axios.create({
-            baseURL : 'http://localhost:3001',
+            baseURL : 'https://ingrammer.herokuapp.com/',
             headers :{
                 Authorization : `Bearer ${localStorage.getItem("jwt")}`
             }
@@ -112,7 +112,7 @@ const Home = () =>{
     const handleDelete = (postId)=>{
         // console.log(postId);
         const authAxios = Axios.create({
-            baseURL : 'http://localhost:3001',
+            baseURL : 'https://ingrammer.herokuapp.com/',
             headers :{
                 Authorization : `Bearer ${localStorage.getItem("jwt")}`
             }
